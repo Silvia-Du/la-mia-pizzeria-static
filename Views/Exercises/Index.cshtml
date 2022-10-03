@@ -4,6 +4,14 @@
     string name = "Silvia";
     string surname = "Dugato";
 
+    int getSumm(int num){
+        int sum = 0;
+        for( int i =0; i<= num; i++ ){
+            sum += i;
+        }
+        return sum;
+    }
+
 }
 
 <h1>Esercizi:</h1>
@@ -13,17 +21,20 @@
 Dichiarare un'altra variabile valorizzandola con il nostro cognome.
 Stampare il nostro nome e cognome all'interno di un tag h2.*@
 
-<h2>es. 1 </h2>
+<h3>es. 1 </h3>
 <div class="container debug py-3">
     <p>Stampare nome e cognome:</p>
     <h5>@name @surname</h5>
 </div>
 
 @*
-1. Dichiarare una variabile valorizzandola con il nostro nome.
-Dichiarare un'altra variabile valorizzandola con il nostro cognome.
-Stampare il nostro nome e cognome all'interno di un tag h2.*@
-
+2. Creare una funzione che stampa la somma dei numeri che vanno da 1 a n (con n passato come parametro - n incluso)
+Stampare dentro uno span il risultato.*@
+<h3>es. 1 </h3>
+<div class="container debug py-3">
+    <p>Stampare in pagina risultato dell funzione somma numeri</p>
+    <h5>@getSumm(10)</h5>
+</div>
 
 
 
