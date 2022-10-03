@@ -11,7 +11,7 @@
 <body>
     <header>
 
-        @Html.Partial("_Header");
+        @Html.Partial("Partials/_Header");
 
     </header>
     <div class="container">
@@ -19,12 +19,11 @@
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
+        @Html.Partial("Partials/_Footer");
 
-        @Html.Partial("_Footer");
-        
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
