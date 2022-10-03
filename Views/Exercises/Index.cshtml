@@ -79,14 +79,25 @@ Stampare dentro uno span il risultato.*@
     @foreach(int num in numCollection){
         if (num >= 20 && num <= 70)
         {
-            <div class="numbers-box p-2">
+            <div class="numbers-box p-2 mb-3">
             <p class="mb-0">n: @num</p>
             </div>
         }
     }
 </div>
 
-//5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) con il formato anno-mese-giorno ore:minuti:secondi
+@*5. Stampare in pagina la data e l'ora attuale (usando la classe DateTime) 
+     con il formato anno-mese-giorno ore:minuti:secondi
+*@
+
+<h3>es. 5 </h3>
+<div class="container debug py-3">
+    <p>Stampare in pagina la data e l'ora attuale
+     con il formato anno-mese-giorno ore:minuti:secondi"</p>
+
+    <h6>Data e ora attuale:</h6>
+    <p> @DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")</p>
+</div>
 
 
 
