@@ -27,3 +27,8 @@ body {
     width: 100%;
     border-radius: 5px;
 }
+.numbers-box {
+    background-color: #EF8476;
+    display: inline-block;
+    border-radius: 5px;
+}
