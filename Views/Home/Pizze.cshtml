@@ -1,0 +1,28 @@
+﻿@{
+    List<Pizza> pizzaCollection = new();
+    pizzaCollection.Add(new Pizza("Margherita", "pomodoro, mozzarella", "~/img/pizza1", 10.99F ));
+    pizzaCollection.Add(new Pizza("Marinara", "pomodoro, aglio rosmarino", "~/img/pizza2", 7.99F));
+    pizzaCollection.Add(new Pizza("Lombarda", "pomodoro, mozzarella, carciofi, grana", "~/img/pizza3", 11.99F));
+    pizzaCollection.Add(new Pizza("Pugliese", "pomodoro, mozzarella, capperi, aciughe", "~/img/pizza4", 10.99F));
+
+
+
+    //string name, string description, string image, float price
+
+    Layout = "Guest/_Simple_Layout";
+    ViewData["Title"] = "Home Page";
+}
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+
+@foreach(Pizza pizza in pizzaCollection){
+
+    <div class="container debug">
+        ciao
+    </div>
+}
+
+
+
