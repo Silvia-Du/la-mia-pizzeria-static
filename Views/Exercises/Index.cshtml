@@ -23,11 +23,13 @@
     //es 4
     List<int> numCollection = new();
     while (numCollection.Count < 20){
-        
+
         int num = new Random().Next(1, 90);
         if (!numCollection.Contains(num)) numCollection.Add(num);
     }
-    
+    //es 6
+    DateTime today = @DateTime.Now;
+
         
     
 
@@ -99,5 +101,24 @@ Stampare dentro uno span il risultato.*@
     <p> @DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")</p>
 </div>
 
+@*6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
+    a. la data di 7 giorni fa
+    b. che giorno della settimana è oggi (il risultato dovrà essere il nome del giorno (Lunedì, Martedì, ...)
+    c. che giorno della settimana sarà nello stesso giorno e mese di oggi ma tra un anno (il risultato dovrà essere 
+        il nome del giorno (Lunedì, Martedì, ...)
+*@
 
 
+<h3>es. 6 </h3>
+<div class="container debug py-3">
+    <p>Partendo dalla data di oggi, stampare in pagina:"</p>
+
+    <h6>- La data di 7 giorni fa:</h6>
+    <p> @DateTime.Now.AddDays(-7).ToString("yyyy-MM-dd")</p>
+
+    <h6>- Che giorno della settimana è oggi:</h6>
+    <p> @DateTime.Now.ToString("dddd")</p>
+
+    <h6>- Che giorno della settimana sarà nello stesso giorno e mese di oggi ma tra un anno:</h6>
+    <p> @DateTime.Now.AddYears(1).ToString("dddd")</p>
+</div>
