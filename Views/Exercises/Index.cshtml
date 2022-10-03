@@ -3,13 +3,21 @@
     Layout = "Guest/_Layout";
     string name = "Silvia";
     string surname = "Dugato";
-
+    //es2
     int getSumm(int num){
         int sum = 0;
         for( int i =0; i<= num; i++ ){
             sum += i;
         }
         return sum;
+    }
+    //es3
+    string str = "nel mezzo del cammin di nostra vita";
+    int letterACount(string phrase, char ch)
+    {
+
+        int freq = phrase.Where(x => (x == ch)).Count();
+        return freq;
     }
 
 }
@@ -30,10 +38,22 @@ Stampare il nostro nome e cognome all'interno di un tag h2.*@
 @*
 2. Creare una funzione che stampa la somma dei numeri che vanno da 1 a n (con n passato come parametro - n incluso)
 Stampare dentro uno span il risultato.*@
-<h3>es. 1 </h3>
+<h3>es. 2 </h3>
 <div class="container debug py-3">
     <p>Stampare in pagina risultato dell funzione somma numeri</p>
-    <h5>@getSumm(10)</h5>
+    <h5> Somma numeri da 1 a 10: @getSumm(10)</h5>
+</div>
+
+@*
+3. Contare quante volte la lettera a è presente nalla frase 
+"nel mezzo del cammin di nostra vita" e stampare questo valore in pagina*@
+
+<h3>es. 3 </h3>
+<div class="container debug py-3">
+    <p>Stampare in pagina quante volte la lettera a è presente nalla frase 
+    "nel mezzo del cammin di nostra vita"</p>
+
+    <h5> Tot lettera a: @letterACount(@str, 'a')</h5>
 </div>
 
 
